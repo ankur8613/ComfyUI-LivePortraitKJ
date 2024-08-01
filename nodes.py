@@ -110,7 +110,7 @@ class DownloadAndLoadLivePortraitModels:
 
         pbar = comfy.utils.ProgressBar(3)
 
-        download_path = "/home/ubuntu/ComfyUI/custom_nodes/ComfyUI-LivePortraitKJ"
+        download_path = download_path = os.path.join(folder_paths.models_dir, "liveportrait")
         model_path = os.path.join(download_path)
 
         if not os.path.exists(model_path):
